@@ -407,6 +407,9 @@ public class AceEditor extends WebView
         loadUrl("javascript:editor.insert(\"" + text +"\");");
     }
 
+    public void setTabSize(int ndex) {
+        loadUrl("javascript:editor.setTabSize("+ndex+");"); //set the editor tab size..
+    }
 
     public void requestText()
     {
